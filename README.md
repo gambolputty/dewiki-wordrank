@@ -1,5 +1,5 @@
 # dewiki-wordrank
-Counts word occurrences in German Wikipedia (case sensitive).
+Counts word occurrences in German Wikipedia (case insensitive).
 
 XML dump file read with [WikiExtractor](https://github.com/attardi/wikiextractor)
 
@@ -7,13 +7,14 @@ Results are in form of a tab-delimited txt file inside [results.zip](https://git
 
 Example:
 ```
-Jahrbuch   3547
-Sweet   3547
-Schmerz   3546
-ÖPNV   3546
-Lago   3546
-Wann   3546
-Mittelgewicht   3546
+öpnv   3547
+sylvia   3547
+gewonnene   3546
+milde   3546
+deal   3546
+amy   3546
+mittelgewicht   3546
+gegenspieler   3545
 ...
 ```
 

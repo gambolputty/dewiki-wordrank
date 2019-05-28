@@ -3,7 +3,7 @@ from os import listdir
 from os.path import join
 
 """
-Reads a list of txt files compiled by "WikiExtractor" and counts word occurrences (case sensitive).
+Reads a list of txt files compiled by "WikiExtractor" and counts word occurrences (case insensitive).
 WikiExtractor: https://github.com/attardi/wikiextractor
 """
 
@@ -36,7 +36,7 @@ for d in listdir(wikidump_dir):
             line = re.sub(r'<!--.+?-->|<ref>.+?</ref>|<nowiki>.+?</nowiki>|<br>', '', line)
                     
             # get word tokens
-            words = [w for w in re.findall(r'\w+', line) if len(w) >= min_word_len and re.match(r'^\d+$', w) is None]
+            words = [w.lower() for w in re.findall(r'\w+', line) if len(w) >= min_word_len and re.match(r'^\d+$', w) is None]
             for word in words:
                 counts[word] = counts.get(word, 0) + 1
 
