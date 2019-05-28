@@ -3,7 +3,7 @@ Counts word occurrences in German Wikipedia (case sensitive).
 
 XML dump file read with [WikiExtractor](https://github.com/attardi/wikiextractor)
 
-Results are in form of a tab-delimited txt file inside [results.zip](https://github.com/gambolputty/dewiki-wordrank/blob/master/results.zip)
+Results are in form of a tab-delimited txt file inside [results.zip](https://github.com/gambolputty/dewiki-wordrank/raw/master/results.zip)
 
 Example:
 ```
